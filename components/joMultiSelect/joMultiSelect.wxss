@@ -1,0 +1,56 @@
+/* components/joMultiSelect/joMultiSelect.wxss */
+.joey-select-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  color: #333;
+  font-size: 36rpx;
+  transition: all .35s ease-in;
+  overflow: hidden;
+}
+
+.joey-select-list{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all .35s ease-in;
+}
+.joey-select-list.selected{
+  left: -100%;
+}
+.joey-select-box{
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.joey-select-wrapper.active{
+  left: 0;
+}
+
+.joey-select-option{
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+
+  
+}
+.back-txt{
+  font-size:26rpx;
+  word-wrap: break-word;
+  margin-left:40rpx;
+}
+
+.joey-select-option:active, .joey-select-option:hover{
+  background: #1AAD16;
+  color: #fff;
+}
+.back-option:before{
+  content: "<";
+}

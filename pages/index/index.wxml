@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="text">当前记录为：{{ currentSelect }}</view>
+    <button class="btn" bindtap="handleClick">选择选项</button>
+   
+  </view>
+  <jo-select bind:handleSelect="handleSelect" open-status="{{ isActive }}"></jo-select>
+</view>

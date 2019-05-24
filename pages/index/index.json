@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "joMultiSelect",
+  "usingComponents": {
+    "jo-select": "../../components/joMultiSelect/joMultiSelect"
+  }
+}
