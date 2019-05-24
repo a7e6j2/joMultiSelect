@@ -3,7 +3,6 @@
  *
  * 作者: Joey Wong 黄俊研
  */
-const { modelList} = require('./school.js')
 
 Component({
   properties: {
@@ -19,7 +18,9 @@ Component({
          
         });
       }
-    }
+      
+    },
+    items: null,
   },
   data: {
    
@@ -38,7 +39,7 @@ Component({
     selectRoot: function (event) {
       let proId = event.target.dataset.id;
      
-      this.data.modelList.forEach((value) => {
+      this.data.items.forEach((value) => {
         if (value.id === proId) {
 
           this.setData({
@@ -72,7 +73,7 @@ Component({
   },
   ready: function () {
     this.setData({
-      modelList: modelList
+      modelList: this.data.items
     });
   }
 })

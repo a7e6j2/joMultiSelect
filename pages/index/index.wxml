@@ -5,5 +5,5 @@
     <button class="btn" bindtap="handleClick">选择选项</button>
    
   </view>
-  <jo-select bind:handleSelect="handleSelect" open-status="{{ isActive }}"></jo-select>
+  <jo-select items="{{modelList}}" bind:handleSelect="handleSelect" open-status="{{ isActive }}"></jo-select>
 </view>

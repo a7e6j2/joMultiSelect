@@ -1,14 +1,16 @@
 //获取应用实例
 const app = getApp();
 
+const { modelList } = require('./school.js')
 
 Page({
   data: {
+    modelList:null,
     isActive: false,
     currentSelect: ''
   },
   onLoad: function (options) {
-
+    this.setData({modelList:modelList})
   },
   handleClick: function () {
     this.setData({
