@@ -8,7 +8,7 @@ Author: Joey Wong (黄俊研)
 
 ### .下载代码
 
-直接通过 git 下载 joMultiSelect  源代码，并将`dist`目录拷贝到自己的项目中
+直接通过 git 下载 joMultiSelect  源代码，并将对应文件拷贝到自己的项目中
 ```bash
 git clone https://github.com/a7e6j2/joMultiSelect.git
 ```
