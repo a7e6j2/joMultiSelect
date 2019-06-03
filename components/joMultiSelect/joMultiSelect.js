@@ -62,6 +62,15 @@ Component({
       });
     },
 
+    //首层返回
+    backToClose: function () {
+      this.setData({
+        rootList: [],
+        secondList: [],
+        openStatus: false
+      });
+    },
+
     // 处理点击二级事件
     selectSecond: function (event) {
       let { index } = event.target.dataset;
